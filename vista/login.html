@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sistema </title>
+</head>
+<body>
+<form method="post" action="login.php">
+	
+  <table>
+  	<tr>
+  		<td> Ususario </td>
+  		<td> <input type="text" name="usuario" value="<?php echo $usuario; ?>" required > </td>
+  	</tr>
+  	<tr>
+  		<td> Password </td>
+  		<td> <input type="password" name="password" value="<?php echo $password; ?>" required > </td>
+  	</tr>
+  </table>
+  <input type="submit" name="aceptar" value="Aceptar">
+  <br>
+  <?php echo $mensaje; ?>
+</form>
+</body>
+</html>
